@@ -3,7 +3,7 @@
  */
 
 import {AppRegistry} from 'react-native';
-import TurboModuleExample from './src/TurboModuleExample';
 import {name as appName} from './app.json';
+import {FabricNativeComponentExample} from './src/FabricNativeComponentExample';
 
-AppRegistry.registerComponent(appName, () => TurboModuleExample);
+AppRegistry.registerComponent(appName, () => FabricNativeComponentExample);

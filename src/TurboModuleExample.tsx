@@ -5,17 +5,17 @@
  * @format
  * @flow strict-local
  */
-import React, {useState} from 'react';
-import {Button, SafeAreaView, StatusBar, Text} from 'react-native';
-import RTNCalculator from 'rtn-calculator/js/NativeCalculator';
+import React, { useState } from "react";
+import { Button, SafeAreaView, StatusBar, Text } from "react-native";
+import RTNCalculator from "rtn-calculator/js/NativeCalculator";
 
 const TurboModuleExample: () => React.ReactNode = () => {
   const [result, setResult] = useState<number | null>(null);
   return (
     <SafeAreaView>
-      <StatusBar barStyle={'dark-content'} />
-      <Text style={{marginLeft: 20, marginTop: 20}}>
-        random number={result ?? '??'}
+      <StatusBar barStyle={"dark-content"} />
+      <Text style={{ marginLeft: 20, marginTop: 20 }}>
+        random number={result ?? "??"}
       </Text>
       <Button
         title="Compute"
@@ -30,3 +30,4 @@ const TurboModuleExample: () => React.ReactNode = () => {
   );
 };
 export default TurboModuleExample;
+
