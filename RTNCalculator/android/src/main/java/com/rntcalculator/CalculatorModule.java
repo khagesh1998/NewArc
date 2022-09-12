@@ -12,6 +12,7 @@ import com.facebook.react.bridge.ReactMethod;
 import java.util.Map;
 import java.util.HashMap;
 import java.lang.Math;
+import android.util.Log;
 
 public class CalculatorModule extends NativeCalculatorSpec {
 
@@ -34,6 +35,7 @@ public class CalculatorModule extends NativeCalculatorSpec {
 
     @Override
     public void random(Promise promise){
+        Log.d("android","android log");
         promise.resolve(Math.random());
     }
 }
