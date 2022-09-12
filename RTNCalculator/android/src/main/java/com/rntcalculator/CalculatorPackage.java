@@ -17,11 +17,11 @@ public class CalculatorPackage extends TurboReactPackage {
     @Nullable
     @Override
     public NativeModule getModule(String name, ReactApplicationContext reactContext) {
-     if (name.equals(CalculatorModule.NAME)) {
-             return new CalculatorModule(reactContext);
-     } else {
-        return null;
-     }
+        if (name.equals(CalculatorModule.NAME)) {
+            return new CalculatorModule(reactContext);
+        } else {
+            return null;
+        }
     }
 
 

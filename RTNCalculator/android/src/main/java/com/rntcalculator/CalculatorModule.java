@@ -11,6 +11,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import java.util.Map;
 import java.util.HashMap;
+import java.lang.Math;
 
 public class CalculatorModule extends NativeCalculatorSpec {
 
@@ -29,5 +30,10 @@ public class CalculatorModule extends NativeCalculatorSpec {
     @Override
     public void add(double a, double b, Promise promise) {
         promise.resolve(a + b);
+    }
+
+    @Override
+    public void random(Promise promise){
+        promise.resolve(Math.random());
     }
 }
